@@ -16,7 +16,7 @@ export default function Header() {
           />
           <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 opacity-20"></div>
         </div>
-        <h1 className="text-3xl font-bold text-center md:text-left">Dr. Nirthika Rajendran</h1>
+        <h1 className="text-3xl font-bold text-center md:text-left">Dr. Nirthika Rajendran (akkachi)</h1>
       </div>
       <nav>
         <ul className="flex items-center space-x-6">

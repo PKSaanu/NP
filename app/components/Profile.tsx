@@ -12,7 +12,7 @@ export default function Profile() {
         transition={{ duration: 0.5 }}
         className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text"
       >
-        Dr. Nirthika Rajendran
+        Dr. Nirthika Rajendran1 (akkachi)
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0, y: 20 }}

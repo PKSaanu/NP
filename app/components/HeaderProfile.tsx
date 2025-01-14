@@ -49,7 +49,7 @@ export default function HeaderProfile() {
                 transition={{ duration: 0.5 }}
                 className="relative text-3xl md:text-5xl font-bold mb-1 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text break-words leading-tight min-h-[65px] md:min-h-[60px]"
               >
-                Dr. Nirthika Rajendran (akkachi)
+                Dr. Nirthika Rajendran (akkachi kuddy)
               </motion.h1>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}

@@ -15,7 +15,7 @@ export default function Supervision() {
   const [direction, setDirection] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
-  
+
   const categories: SupervisionCategory[] = [
     {
       title: "Undergraduate Team Software Project",
@@ -100,12 +100,12 @@ export default function Supervision() {
   return (
     <section id="supervision" className="py-20">
       <div className="container mx-auto">
-        <h2 className="text-2xl font-bold mb-16 text-purple-400">Supervision</h2>
-        
+        <h2 className="text-[clamp(1.25rem,4vw,1.5rem)] font-bold mb-16 text-purple-400">Supervision</h2>
+
         <div className="relative">
           {/* Mobile View */}
           <div className="md:hidden min-h-[480px] relative">
-            <div 
+            <div
               className="absolute inset-0 flex items-center justify-center px-4"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
@@ -127,14 +127,14 @@ export default function Supervision() {
                         <div className="bg-purple-500 bg-opacity-20 p-3 rounded-full">
                           {categories[currentIndex].icon}
                         </div>
-                        <h3 className="font-bold text-base text-slate-100">
+                        <h3 className="font-bold text-[clamp(0.9rem,3vw,1rem)] text-slate-100">
                           {categories[currentIndex].title}
                         </h3>
                       </div>
-                      <div className="text-3xl font-bold text-purple-300 mb-2">
+                      <div className="text-[clamp(1.5rem,5vw,1.875rem)] font-bold text-purple-300 mb-2">
                         {categories[currentIndex].count}
                       </div>
-                      <div className="text-sm text-gray-400">
+                      <div className="text-[clamp(0.8rem,2vw,0.875rem)] text-gray-400">
                         Projects/Students
                       </div>
                       <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
@@ -143,10 +143,10 @@ export default function Supervision() {
                 </motion.div>
               </AnimatePresence>
             </div>
-            
+
             {/* Navigation */}
             <div className="absolute left-0 right-0 -bottom-8 flex justify-between items-center px-4 pb-4">
-              <button 
+              <button
                 onClick={prevCard}
                 className="p-2 rounded-full bg-purple-500 bg-opacity-20 text-white hover:bg-opacity-30 transition-colors"
                 aria-label="Previous card"
@@ -157,13 +157,12 @@ export default function Supervision() {
                 {categories.map((_, idx) => (
                   <div
                     key={idx}
-                    className={`w-2 h-2 rounded-full transition-colors ${
-                      idx === currentIndex ? 'bg-purple-500' : 'bg-purple-500 bg-opacity-20'
-                    }`}
+                    className={`w-2 h-2 rounded-full transition-colors ${idx === currentIndex ? 'bg-purple-500' : 'bg-purple-500 bg-opacity-20'
+                      }`}
                   />
                 ))}
               </div>
-              <button 
+              <button
                 onClick={nextCard}
                 className="p-2 rounded-full bg-purple-500 bg-opacity-20 text-white hover:bg-opacity-30 transition-colors"
                 aria-label="Next card"
@@ -182,14 +181,14 @@ export default function Supervision() {
                     <div className="bg-purple-500 bg-opacity-20 p-3 rounded-full">
                       {category.icon}
                     </div>
-                    <h3 className="font-bold text-base text-slate-100">
+                    <h3 className="font-bold text-[clamp(0.9rem,3vw,1rem)] text-slate-100">
                       {category.title}
                     </h3>
                   </div>
-                  <div className="text-3xl font-bold text-purple-300 mb-2">
+                  <div className="text-[clamp(1.5rem,5vw,1.875rem)] font-bold text-purple-300 mb-2">
                     {category.count}
                   </div>
-                  <div className="text-sm text-gray-400">
+                  <div className="text-[clamp(0.8rem,2vw,0.875rem)] text-gray-400">
                     Projects/Students
                   </div>
                   <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />

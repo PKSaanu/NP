@@ -16,7 +16,7 @@ interface CareerItem {
 export function CareerProfile() {
   const careerItems: CareerItem[] = [
     {
-      title: "Lecturer (Probationary)",
+      title: "Lecturer",
       company: "Department of Computer Science, University of Jaffna, Sri Lanka",
       period: "Dec 2021 – Present",
     },
@@ -45,18 +45,18 @@ export function CareerProfile() {
         transition={{ duration: 0.5, delay: index * 0.1 }}
         className="bg-gray-700 bg-opacity-50 p-4 sm:p-5 rounded-lg hover:bg-opacity-70 transition-all duration-300"
       >
-        <h3 className="text-lg sm:text-xl font-semibold text-purple-300 flex items-center gap-2">
+        <h3 className="text-[clamp(1rem,3vw,1.25rem)] font-semibold text-purple-300 flex items-center gap-2">
           <IconBriefcase className="w-5 h-5" />
           {item.title}
         </h3>
-        <p className="text-gray-300 mt-2 text-sm sm:text-base">{item.company}</p>
-        <p className="text-purple-400 mt-1 text-sm sm:text-base flex items-center gap-2">
+        <p className="text-gray-300 mt-2 text-[clamp(0.875rem,2.5vw,1rem)]">{item.company}</p>
+        <p className="text-purple-400 mt-1 text-[clamp(0.875rem,2.5vw,1rem)] flex items-center gap-2">
           <IconCalendarWeek className="w-4 h-4" />
           {item.period}
         </p>
         {item.description && (
           <motion.p
-            className="text-gray-400 mt-4 text-sm sm:text-base"
+            className="text-gray-400 mt-4 text-[clamp(0.875rem,2.5vw,1rem)]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}

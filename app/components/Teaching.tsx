@@ -56,11 +56,11 @@ export default function Teaching() {
       icon: <Users className="w-6 h-6" /> // Icon representing teamwork or coordination
     }
   ];
-  
+
 
   return (
     <section id="teaching" className="mb-8 bg-gray-800 bg-opacity-50 p-6 rounded-lg backdrop-blur-sm shadow-lg">
-      <h2 className="text-2xl font-bold mb-6 text-purple-400">Teaching</h2>
+      <h2 className="text-[clamp(1.25rem,4vw,1.5rem)] font-bold mb-6 text-purple-400">Teaching</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {courses.map((course, index) => (
           <motion.div
@@ -78,7 +78,7 @@ export default function Teaching() {
                 </div>
                 <div className="text-sm text-purple-300 font-medium">{course.code}</div>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">{course.name}</h3>
+              <h3 className="text-[clamp(1.1rem,3vw,1.25rem)] font-semibold text-white mb-2">{course.name}</h3>
               <p className="text-purple-200 text-sm">{course.period}</p>
             </div>
             <div className="absolute bottom-0 right-0 w-24 h-24 bg-white opacity-5 rounded-tl-full transform translate-x-12 translate-y-12"></div>

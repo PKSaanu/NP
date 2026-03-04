@@ -40,7 +40,7 @@ export default function AdminRoles() {
 
   return (
     <section id="adminroles" className="mb-8 bg-gray-800 bg-opacity-50 p-6 rounded-lg backdrop-blur-sm shadow-lg">
-      <h2 className="text-2xl font-bold mb-6 text-purple-400">Administrative Roles</h2>
+      <h2 className="text-[clamp(1.25rem,4vw,1.5rem)] font-bold mb-6 text-purple-400">Administrative Roles</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {roles.map((role, index) => (
           <motion.div
@@ -54,9 +54,9 @@ export default function AdminRoles() {
               {role.icon}
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-purple-300">{role.title}</h3>
-              <p className="text-gray-300 text-sm mt-1">{role.organization}</p>
-              <p className="text-purple-400 text-sm mt-2">{role.period}</p>
+              <h3 className="text-[clamp(1rem,3vw,1.125rem)] font-semibold text-purple-300">{role.title}</h3>
+              <p className="text-gray-300 text-[clamp(0.8rem,2vw,0.875rem)] mt-1">{role.organization}</p>
+              <p className="text-purple-400 text-[clamp(0.8rem,2vw,0.875rem)] mt-2">{role.period}</p>
             </div>
           </motion.div>
         ))}

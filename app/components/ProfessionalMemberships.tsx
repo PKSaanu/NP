@@ -90,7 +90,7 @@ export default function ProfessionalMemberships() {
   return (
     <section id="professionalmemberships" className="mb-8 bg-gray-800 bg-opacity-50 p-6 rounded-lg backdrop-blur-sm shadow-lg">
       <CardSpotlight>
-        <h2 className="text-2xl font-bold mb-6 text-purple-400">Professional Memberships</h2>
+        <h2 className="text-[clamp(1.25rem,4vw,1.5rem)] font-bold mb-6 text-purple-400">Professional Memberships</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {sortedMemberships.map((membership, index) => (
             <div key={index} className="flex items-start space-x-4">
@@ -98,9 +98,9 @@ export default function ProfessionalMemberships() {
                 {membership.icon}
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-200">{membership.organization}</h3>
-                <p className="text-purple-300">{membership.role}</p>
-                <p className="text-sm text-gray-400">{membership.period}</p>
+                <h3 className="text-[clamp(1rem,3vw,1.125rem)] font-semibold text-gray-200">{membership.organization}</h3>
+                <p className="text-purple-300 text-[clamp(0.875rem,2.5vw,1rem)]">{membership.role}</p>
+                <p className="text-[clamp(0.8rem,2vw,0.875rem)] text-gray-400">{membership.period}</p>
               </div>
             </div>
           ))}

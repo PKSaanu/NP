@@ -35,7 +35,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="mb-8 bg-gray-800 bg-opacity-50 p-6 rounded-lg backdrop-blur-sm shadow-lg">
-      <h2 className="text-2xl font-bold mb-6 text-purple-400">Projects</h2>
+      <h2 className="text-[clamp(1.25rem,4vw,1.5rem)] font-bold mb-6 text-purple-400">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <motion.div
@@ -56,22 +56,22 @@ export default function Projects() {
               }}
               transition={{ type: "spring", stiffness: 100, damping: 10 }}
             >
-              <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
+              <h3 className="text-[clamp(1.1rem,3vw,1.25rem)] font-semibold text-white mb-3 flex items-center">
                 {project.title}
               </h3>
-              <p className="text-gray-300 mb-4">{project.description}</p>
+              <p className="text-gray-300 text-[clamp(0.875rem,2.5vw,1rem)] mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, techIndex) => (
-                  <span key={techIndex} className="bg-purple-500 bg-opacity-20 text-purple-300 px-2 py-1 rounded-full text-xs">
+                  <span key={techIndex} className="bg-purple-500 bg-opacity-20 text-purple-300 px-2 py-1 rounded-full text-[clamp(0.7rem,2vw,0.75rem)]">
                     {tech}
                   </span>
                 ))}
               </div>
               {project.link && (
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-purple-300 hover:text-purple-200 transition-colors duration-200"
                 >
                   View Project <ExternalLink className="w-4 h-4 ml-1" />

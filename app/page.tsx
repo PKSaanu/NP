@@ -12,9 +12,9 @@ import Supervision from './components/Supervision'
 import Footer from './components/Footer'
 import Background from './components/Background'
 import { Headernav } from './components/Headernav'
-import { HeroParallaxDemo } from './components/parallax'
+import { GallerySection } from './components/parallax'
 import { FloatingNav } from '@/components/ui/floating-navbar'
-import {IconUserScan, IconMapHeart, IconAward, IconBooks, IconPlayVolleyball, IconMathFunction, IconUsers, IconPresentation, IconBuildingLighthouse} from "@tabler/icons-react";
+import { IconUserScan, IconMapHeart, IconAward, IconBooks, IconPlayVolleyball, IconMathFunction, IconUsers, IconPresentation, IconBuildingLighthouse } from "@tabler/icons-react";
 
 const navItems = [
   {
@@ -82,7 +82,7 @@ export default function Home() {
       <Background />
       {/* <Headernav /> */}
       {/* Added margin-top to account for the height of the navigation bar */}
-      <div className="max-w-6xl mx-auto mt-auto space-y-12 relative z-10 pt-[64px]">
+      <div className="max-w-6xl mx-auto mt-auto space-y-12 relative z-10 pt-4 md:pt-8">
         <FloatingNav navItems={navItems} />
         <HeaderProfile />
         <Education />
@@ -92,7 +92,7 @@ export default function Home() {
         <Awards />
         <AdminRoles />
         <Teaching />
-        <HeroParallaxDemo />
+        <GallerySection />
         <ProfessionalMemberships />
         <Projects />
         <Supervision />

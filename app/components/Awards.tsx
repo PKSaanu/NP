@@ -53,7 +53,7 @@ export default function Awards() {
 
   return (
     <section id="awards" className="mb-8 bg-inherit bg-opacity-70 p-6 bg-transparent rounded-lg backdrop-blur-sm shadow-lg">
-      <h2 className="text-2xl font-bold mb-8 text-purple-400">Awards & Achievements</h2>
+      <h2 className="text-[clamp(1.25rem,4vw,1.5rem)] font-bold mb-8 text-purple-400">Awards & Achievements</h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
         {awards.map((award, index) => (
           <WobbleCard
@@ -71,9 +71,9 @@ export default function Awards() {
                 {award.icon}
               </div>
               <div className="relative z-5">
-                <div className="text-white/80 text-sm font-medium mb-2">{award.year}</div>
-                <h3 className="text-white text-2xl font-bold mb-2">{award.title}</h3>
-                <p className="text-white/90 text-sm">{award.description}</p>
+                <div className="text-white/80 text-[clamp(0.8rem,2vw,0.875rem)] font-medium mb-2">{award.year}</div>
+                <h3 className="text-white text-[clamp(1.25rem,3vw,1.5rem)] font-bold mb-2 leading-tight">{award.title}</h3>
+                <p className="text-white/90 text-[clamp(0.8rem,2.5vw,0.875rem)]">{award.description}</p>
               </div>
             </motion.div>
           </WobbleCard>

@@ -85,7 +85,7 @@ export default function Publications() {
       abstract: "This study focuses on optimizing Kappa as the evaluation measure for classifying diabetic retinopathy and prostate cancer images using loss functions..."
     }
   ];
-  
+
 
   const workshops: Publication[] = [
     {
@@ -119,7 +119,7 @@ export default function Publications() {
       abstract: "This work presents a web-based system designed for dengue monitoring and control..."
     }
   ];
-  
+
 
   const newsletters: Publication[] = [
     {
@@ -157,7 +157,7 @@ export default function Publications() {
       abstract: "This article provides an introduction to the role of loss functions in deep learning models and their applications..."
     }
   ];
-  
+
 
   const thesis: Publication[] = [
     {
@@ -166,41 +166,40 @@ export default function Publications() {
       journal: "PhD Thesis, University of Jaffna",
       year: 2022,
       abstract: "This thesis explores advanced deep learning techniques for fine-grained grading of diabetic retinopathy images...",
-      doi: "https://example.com/thesis-preview" 
+      doi: "https://example.com/thesis-preview"
     }
   ]
 
   const renderPublication = (pub: Publication, index: number, currentSection: number) => {
     const isExpanded = expandedPublication === index + (currentSection * 1000);
-  
+
     return (
-      <motion.div 
+      <motion.div
         key={index}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
-        className={`border-l-4 border-purple-500 pl-4 py-4 transition-all duration-300 hover:border-pink-500 hover:bg-gray-700 hover:bg-opacity-50 rounded relative overflow-hidden cursor-pointer ${
-          isExpanded ? "bg-gray-700 bg-opacity-50" : ""
-        }`}
+        className={`border-l-4 border-purple-500 pl-4 py-4 transition-all duration-300 hover:border-pink-500 hover:bg-gray-700 hover:bg-opacity-50 rounded relative overflow-hidden cursor-pointer ${isExpanded ? "bg-gray-700 bg-opacity-50" : ""
+          }`}
         onClick={() => setExpandedPublication(isExpanded ? null : index + (currentSection * 1000))}
       >
         <div className="flex justify-between items-start gap-4">
           <div className="flex-1">
-            <p className="font-semibold text-lg text-gray-100">{pub.title}</p>
-            <p className="text-gray-300 mt-2">{pub.authors}</p>
-            <p className="text-gray-400 mt-1">{pub.journal}, {pub.year}</p>
-            {pub.volume && <p className="text-gray-400">Volume: {pub.volume}</p>}
-            {pub.pages && <p className="text-gray-400">Pages: {pub.pages}</p>}
-            {pub.impact && <p className="text-sm text-purple-300 mt-2">{pub.impact}</p>}
-            {pub.status && <p className="text-sm text-pink-400 mt-1">{pub.status}</p>}
+            <p className="font-semibold text-[clamp(1rem,3vw,1.125rem)] text-gray-100">{pub.title}</p>
+            <p className="text-gray-300 text-[clamp(0.875rem,2.5vw,1rem)] mt-2">{pub.authors}</p>
+            <p className="text-gray-400 text-[clamp(0.875rem,2.5vw,1rem)] mt-1">{pub.journal}, {pub.year}</p>
+            {pub.volume && <p className="text-gray-400 text-[clamp(0.875rem,2.5vw,1rem)]">Volume: {pub.volume}</p>}
+            {pub.pages && <p className="text-gray-400 text-[clamp(0.875rem,2.5vw,1rem)]">Pages: {pub.pages}</p>}
+            {pub.impact && <p className="text-[clamp(0.8rem,2vw,0.875rem)] text-purple-300 mt-2">{pub.impact}</p>}
+            {pub.status && <p className="text-[clamp(0.8rem,2vw,0.875rem)] text-pink-400 mt-1">{pub.status}</p>}
             {pub.award && (
-              <motion.p 
+              <motion.p
                 className="inline-flex items-center gap-2 text-yellow-400 mt-2 bg-yellow-900 bg-opacity-20 px-3 py-1 rounded-full"
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.3 }}
               >
-               🏆 {pub.award}
+                🏆 {pub.award}
               </motion.p>
             )}
           </div>
@@ -208,20 +207,20 @@ export default function Publications() {
             {isExpanded ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
           </div>
         </div>
-        
+
         <AnimatePresence>
           {isExpanded && pub.abstract && (
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
               className="mt-4 pl-4 border-l-2 border-gray-700"
             >
-              <h4 className="text-sm font-semibold text-gray-300 mb-2">Abstract</h4>
-              <p className="text-gray-400 text-sm">{pub.abstract}</p>
+              <h4 className="text-[clamp(0.8rem,2vw,0.875rem)] font-semibold text-gray-300 mb-2">Abstract</h4>
+              <p className="text-gray-400 text-[clamp(0.8rem,2.5vw,0.875rem)]">{pub.abstract}</p>
               {pub.doi && (
-                <a 
+                <a
                   href={pub.doi.startsWith("http") ? pub.doi : `https://doi.org/${pub.doi}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -237,15 +236,15 @@ export default function Publications() {
       </motion.div>
     );
   };
-  
+
 
   return (
     <section id="publications" className="mb-8 bg-gray-800 bg-opacity-50 p-6 rounded-lg backdrop-blur-sm shadow-lg">
-      <h2 className="text-2xl font-bold mb-8 text-purple-400">Publications</h2>
-      
+      <h2 className="text-[clamp(1.25rem,4vw,1.5rem)] font-bold mb-8 text-purple-400">Publications</h2>
+
       <div className="space-y-8">
         <div>
-          <h3 className="flex items-center gap-2 text-xl font-semibold mb-4 text-purple-300">
+          <h3 className="flex items-center gap-2 text-[clamp(1.1rem,3vw,1.25rem)] font-semibold mb-4 text-purple-300">
             <IconBooks className="w-7 h-7" />
             Indexed International Journals
           </h3>
@@ -255,7 +254,7 @@ export default function Publications() {
         </div>
 
         <div>
-          <h3 className="flex items-center gap-2 text-xl font-semibold mb-4 text-purple-300">
+          <h3 className="flex items-center gap-2 text-[clamp(1.1rem,3vw,1.25rem)] font-semibold mb-4 text-purple-300">
             <IconAward className="w-7 h-7" />
             International Conference Full Papers
           </h3>
@@ -265,7 +264,7 @@ export default function Publications() {
         </div>
 
         <div>
-          <h3 className="flex items-center gap-2 text-xl font-semibold mb-4 text-purple-300">
+          <h3 className="flex items-center gap-2 text-[clamp(1.1rem,3vw,1.25rem)] font-semibold mb-4 text-purple-300">
             <IconPresentation className="w-7 h-7" />
             National Workshop Posters
           </h3>
@@ -275,7 +274,7 @@ export default function Publications() {
         </div>
 
         <div>
-          <h3 className="flex items-center gap-2 text-xl font-semibold mb-4 text-purple-300">
+          <h3 className="flex items-center gap-2 text-[clamp(1.1rem,3vw,1.25rem)] font-semibold mb-4 text-purple-300">
             <IconNews className="w-7 h-7" />
             Articles in Newsletters
           </h3>
@@ -284,7 +283,7 @@ export default function Publications() {
           </div>
         </div>
         <div>
-          <h3 className="flex items-center gap-2 text-xl font-semibold mb-4 text-purple-300">
+          <h3 className="flex items-center gap-2 text-[clamp(1.1rem,3vw,1.25rem)] font-semibold mb-4 text-purple-300">
             <IconSchool className="w-7 h-7" />
             Thesis
           </h3>

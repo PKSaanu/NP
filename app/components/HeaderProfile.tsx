@@ -43,29 +43,29 @@ export default function HeaderProfile() {
             {/* Text Content Container */}
             <div className="flex-1 flex flex-col relative z-30">
               <div className="text-center md:text-left">
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="relative text-3xl md:text-5xl font-bold mb-1 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text break-words leading-tight min-h-[65px] md:min-h-[60px]"
-              >
-                Dr. Nirthika Rajendran (akkachi kuddy)
-              </motion.h1>
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-lg md:text-2xl font-semibold mb-6 text-purple-300"  // Increased mb here
-              >
-                Lecturer at University of Jaffna
-              </motion.h2>
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="relative text-[clamp(1.75rem,5vw,3rem)] font-bold mb-1 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text break-words leading-tight min-h-[65px] md:min-h-[60px]"
+                >
+                  Dr. Nirthika Rajendran
+                </motion.h1>
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="text-[clamp(1.1rem,3vw,1.5rem)] font-semibold mb-6 text-purple-300"
+                >
+                  Lecturer at University of Jaffna
+                </motion.h2>
 
                 {/* Social Links */}
-                <motion.nav 
-                initial={{ opacity:0, y: 20 }}
-                animate={{ opacity: 1, y:0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="mb-4"
+                <motion.nav
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="mb-4"
                 >
                   <ul className="flex justify-center md:justify-start space-x-4">
                     {/* <li>
@@ -151,7 +151,7 @@ export default function HeaderProfile() {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   className="text-gray-300 text-justify mb-4 mt-4 relative z-30 leading-relaxed bg-gray-800 bg-opacity-50 p-2 rounded-lg"
                 >
-                    <TextGenerateEffect duration={1} words={words} />
+                  <TextGenerateEffect duration={1} words={words} />
                 </motion.div>
               </div>
             </div>

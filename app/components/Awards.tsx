@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 import { WobbleCard } from '@/components/ui/wobble-card';
 import { motion } from 'framer-motion';
-import { Trophy, Star, AwardIcon, Medal, GraduationCap } from 'lucide-react';
+import { IconTrophy, IconStar, IconAward, IconMedal, IconSchool } from '@tabler/icons-react';
 
 export default function Awards() {
   const awards = [
@@ -12,28 +12,28 @@ export default function Awards() {
       year: 2025,
       title: "Platinum 2025 Darrel Chong Student Activity Award",
       description: "Presented to the IEEE Women in Engineering Student Branch Affinity Group of the University of Jaffna (Team Advisor)",
-      icon: <Trophy className="w-8 h-8" />,
+      icon: <IconTrophy className="w-8 h-8" />,
       color: "from-blue-600 to-indigo-600",
     },
     {
       year: 2025,
       title: "R10 WIE Outstanding Student Branch Affinity Group Award",
       description: "Presented to the IEEE WIE Student Branch Affinity Group of the University of Jaffna by IEEE Region 10 (Asia–Pacific) (Team Advisor)",
-      icon: <AwardIcon className="w-8 h-8" />,
+      icon: <IconAward className="w-8 h-8" />,
       color: "from-purple-600 to-pink-600",
     },
     {
       year: 2025,
       title: "Felicitation Award",
       description: "In the category 'Breaking Boundaries: Women Who Excel Beyond Their Core Discipline' at International Women's Day Celebration 2025",
-      icon: <Star className="w-8 h-8" />,
+      icon: <IconStar className="w-8 h-8" />,
       color: "from-pink-500 to-orange-500",
     },
     {
       year: 2025,
       title: "Outstanding Branch Counselor or Advisor Award",
       description: "IEEE Sri Lanka Section Outstanding Branch Counselor or Advisor Award for 2024",
-      icon: <Medal className="w-8 h-8" />,
+      icon: <IconMedal className="w-8 h-8" />,
       color: "from-indigo-500 to-purple-500",
     },
     {
@@ -46,35 +46,35 @@ export default function Awards() {
           (Team Advisor)
         </>
       ),
-      icon: <AwardIcon className="w-8 h-8" />,
+      icon: <IconAward className="w-8 h-8" />,
       color: "from-blue-500 to-purple-500",
     },
     {
       year: 2021,
       title: "Best Presentation Award",
       description: 'For the poster "Deep Learning for Diabetic Retinopathy Grading" presented in SL-SWCS\'21',
-      icon: <Trophy className="w-8 h-8" />,
+      icon: <IconTrophy className="w-8 h-8" />,
       color: "from-yellow-500 to-orange-500",
     },
     {
       year: 2020,
       title: "Best Paper Award",
       description: 'For "Loss functions for optimizing Kappa as the evaluation measure" in IEEE ICIIS',
-      icon: <Star className="w-8 h-8" />,
+      icon: <IconStar className="w-8 h-8" />,
       color: "from-green-500 to-emerald-500",
     },
     {
       year: 2019,
       title: "Best Presentation Award",
       description: 'For the poster "Is Soft Pooling better than Max and Average Pooling?" in SL-SWCS\'19',
-      icon: <Medal className="w-8 h-8" />,
+      icon: <IconMedal className="w-8 h-8" />,
       color: "from-purple-500 to-pink-500",
     },
     {
       year: 2017,
       title: "Sabalingam Memorial Prize",
       description: "For the Best Performance in the Special Degree examination in Science, University of Jaffna",
-      icon: <GraduationCap className="w-8 h-8" />,
+      icon: <IconSchool className="w-8 h-8" />,
       color: "from-indigo-500 to-blue-500",
     }
   ];

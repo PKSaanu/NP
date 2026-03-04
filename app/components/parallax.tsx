@@ -108,7 +108,7 @@ export function GallerySection() {
   }
 
   return (
-    <section style={{ padding: "3rem 0" }}>
+    <section id="gallery" style={{ padding: "3rem 0" }}>
       <style>{`
         .gallery-preview-wrap {
           position: relative;

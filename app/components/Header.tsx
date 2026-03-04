@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, Linkedin, BookOpen } from 'lucide-react'
+import { IconMail, IconBrandLinkedin, IconBook } from '@tabler/icons-react'
 
 export default function Header() {
   return (
@@ -21,34 +21,34 @@ export default function Header() {
       <nav>
         <ul className="flex items-center space-x-6">
           <li>
-            <Link 
-              href="mailto:nirthika@univ.jfn.ac.lk" 
+            <Link
+              href="mailto:nirthika@univ.jfn.ac.lk"
               className="text-gray-300 hover:text-purple-400 transition-colors duration-200 flex items-center gap-2"
               aria-label="Email"
             >
-              <Mail className="w-6 h-6" />
+              <IconMail className="w-6 h-6" />
             </Link>
           </li>
           <li>
-            <Link 
-              href="https://lk.linkedin.com/in/nirthika" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <Link
+              href="https://lk.linkedin.com/in/nirthika"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-300 hover:text-purple-400 transition-colors duration-200 flex items-center gap-2"
               aria-label="LinkedIn"
             >
-              <Linkedin className="w-6 h-6" />
+              <IconBrandLinkedin className="w-6 h-6" />
             </Link>
           </li>
           <li>
-            <Link 
-              href="https://scholar.google.com/citations?user=WtrsAqsAAAAJ&hl=en&oi=ao" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <Link
+              href="https://scholar.google.com/citations?user=WtrsAqsAAAAJ&hl=en&oi=ao"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-300 hover:text-purple-400 transition-colors duration-200 flex items-center gap-2"
               aria-label="Google Scholar"
             >
-              <BookOpen className="w-6 h-6" />
+              <IconBook className="w-6 h-6" />
             </Link>
           </li>
         </ul>

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Users, UserCheck, GraduationCap } from 'lucide-react';
+import { IconUsers, IconUserCheck, IconSchool } from '@tabler/icons-react';
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 interface SupervisionCategory {
@@ -15,25 +15,25 @@ export default function Supervision() {
     {
       title: "Undergraduate Team Software Project",
       count: 15,
-      icon: <Users className="w-10 h-10" />,
+      icon: <IconUsers className="w-10 h-10" />,
       color: "from-blue-400 to-indigo-500"
     },
     {
       title: "Undergraduate Research Project (Co-Supervision)",
       count: 5,
-      icon: <UserCheck className="w-10 h-10" />,
+      icon: <IconUserCheck className="w-10 h-10" />,
       color: "from-purple-400 to-pink-500"
     },
     {
       title: "Undergraduate Research Project (Main Supervision)",
       count: 9,
-      icon: <UserCheck className="w-10 h-10" />,
+      icon: <IconUserCheck className="w-10 h-10" />,
       color: "from-amber-400 to-orange-500"
     },
     {
       title: "External Degree Software Project (BIT from UCSC)",
       count: 1,
-      icon: <GraduationCap className="w-10 h-10" />,
+      icon: <IconSchool className="w-10 h-10" />,
       color: "from-emerald-400 to-teal-500"
     }
   ];

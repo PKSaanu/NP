@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Briefcase, Calendar } from "lucide-react";
+
 import { Timeline } from "@/components/ui/timeline";
 import { IconBriefcase, IconCalendarWeek } from "@tabler/icons-react";
 

@@ -6,6 +6,16 @@
   --accent-color: 139, 92, 246;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section,
+[id] {
+  scroll-margin-top: 5.5rem;
+  /* Reduced to 5.5rem as navbar is now shorter */
+}
+
 body {
   color: #e2e8f0;
   background-color: #111827;
@@ -15,37 +25,41 @@ body {
   .animation-delay-2000 {
     animation-delay: 2s;
   }
+
   .animation-delay-4000 {
     animation-delay: 4s;
   }
+
   .border-border {
-    border-color: #f00; 
+    border-color: #f00;
   }
+
   .bg-background {
     background-color: var(--background);
   }
+
   .text-foreground {
     color: var(--foreground);
   }
 }
 
-/* Custom scrollbar for Webkit browsers */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+/* Hide scrollbars for all browsers */
+* {
+  ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
-::-webkit-scrollbar-track {
-  background: #1f2937;
+*::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
 }
 
-::-webkit-scrollbar-thumb {
-  background: #4b5563;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #6b7280;
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
 }
 
 @layer base {
@@ -76,6 +90,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -108,26 +123,33 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
+
 .scrollbar-hide {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
+  display: none;
+  /* Chrome, Safari, and Opera */
 }
 
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -137,13 +159,3 @@ body {
   background-size: 200% 200%;
   animation: gradientAnimation 3s ease infinite;
 }
-
-.no-scrollbar {
-  -ms-overflow-style: none;  /* for Internet Explorer */
-  scrollbar-width: none;  /* for Firefox */
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;  /* for Chrome, Safari, and Opera */
-}
-

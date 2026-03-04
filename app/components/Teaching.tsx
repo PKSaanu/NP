@@ -2,7 +2,7 @@
 
 import { TracingBeam } from '@/components/ui/tracing-beam'
 import { motion } from 'framer-motion'
-import { BookOpen, Code, Terminal, Monitor, Users, Briefcase, Cpu } from 'lucide-react'
+import { IconBook, IconCode, IconTerminal2, IconScreenShare, IconUsers, IconBriefcase, IconCpu } from '@tabler/icons-react'
 
 interface Course {
   code: string
@@ -17,43 +17,43 @@ export default function Teaching() {
       code: "CSC205S2, CSC205G2",
       name: "Software Engineering",
       period: "2023-2024",
-      icon: <Code className="w-6 h-6" />
+      icon: <IconCode className="w-6 h-6" />
     },
     {
       code: "CSC202S2, CSC202G2",
       name: "Data Structure and Algorithm (Practical)",
       period: "2022-Date",
-      icon: <Terminal className="w-6 h-6" />
+      icon: <IconTerminal2 className="w-6 h-6" />
     },
     {
       code: "CSC107S2, CSC103G2",
       name: "Multimedia Technologies",
       period: "2022-Date",
-      icon: <Monitor className="w-6 h-6" />
+      icon: <IconScreenShare className="w-6 h-6" />
     },
     {
       code: "CSC301S3, CSC301G3",
       name: "Rapid Application Development",
       period: "2022-Date",
-      icon: <BookOpen className="w-6 h-6" />
+      icon: <IconBook className="w-6 h-6" />
     },
     {
       code: "CSC203S2, CSC203G2",
       name: "Operating Systems",
       period: "2022–2023",
-      icon: <Cpu className="w-6 h-6" /> // Icon representing OS or computer hardware
+      icon: <IconCpu className="w-6 h-6" /> // Icon representing OS or computer hardware
     },
     {
       code: "CSC212S2",
       name: "Professional Practice",
       period: "2022-Date",
-      icon: <Briefcase className="w-6 h-6" /> // Icon representing professional work
+      icon: <IconBriefcase className="w-6 h-6" /> // Icon representing professional work
     },
     {
       code: "CSC304S3, CSC304G3",
       name: "Coordinator for Team Software Project",
       period: "2022–2023",
-      icon: <Users className="w-6 h-6" /> // Icon representing teamwork or coordination
+      icon: <IconUsers className="w-6 h-6" /> // Icon representing teamwork or coordination
     }
   ];
 

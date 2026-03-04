@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Linkedin, BookOpen, GraduationCap, Brain, Code, Database } from 'lucide-react'
+import { IconMail, IconBrandLinkedin, IconBook, IconSchool, IconBrain, IconCode, IconDatabase } from '@tabler/icons-react'
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import React from "react";
 import Image from 'next/image';
@@ -165,10 +165,10 @@ export default function HeaderProfile() {
             className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 relative z-30"
           >
             {[
-              { icon: GraduationCap, text: "Academic Excellence", color: "from-purple-600 to-purple-700" },
-              { icon: Brain, text: "AI Research", color: "from-purple-600 to-purple-800" },
-              { icon: Code, text: "Software Development", color: "from-purple-500 to-purple-700" },
-              { icon: Database, text: "Data Analysis", color: "from-purple-500 to-purple-700" }
+              { icon: IconSchool, text: "Academic Excellence", color: "from-purple-600 to-purple-700" },
+              { icon: IconBrain, text: "AI Research", color: "from-purple-600 to-purple-800" },
+              { icon: IconCode, text: "Software Development", color: "from-purple-500 to-purple-700" },
+              { icon: IconDatabase, text: "Data Analysis", color: "from-purple-500 to-purple-700" }
             ].map((item, index) => (
               <div
                 key={index}

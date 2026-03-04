@@ -1,10 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { Book, Award, FileText, Newspaper, ChevronDown, ChevronUp, Trophy, GraduationCap } from 'lucide-react'
+import { IconBooks, IconAward, IconFileDescription, IconNews, IconChevronDown, IconChevronUp, IconTrophy, IconSchool, IconMicroscope, IconPresentation } from '@tabler/icons-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { LinkPreview } from "@/components/ui/link-preview";
-import { IconAward, IconBooks, IconLink, IconMicroscope, IconNews, IconPresentation, IconSchool } from '@tabler/icons-react';
 
 interface Publication {
   title: string
@@ -186,61 +185,86 @@ export default function Publications() {
 
     return (
       <motion.div
+        layout
         key={index}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
-        className={`border-l-4 border-purple-500 pl-4 py-4 transition-all duration-300 hover:border-pink-500 hover:bg-gray-700 hover:bg-opacity-50 rounded relative overflow-hidden cursor-pointer ${isExpanded ? "bg-gray-700 bg-opacity-50" : ""
+        className={`group relative overflow-hidden rounded-2xl border border-gray-700/50 bg-gray-800/30 p-6 backdrop-blur-md transition-all duration-500 hover:border-purple-500/50 hover:bg-gray-800/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] cursor-pointer ${isExpanded ? "border-purple-500/50 bg-gray-800/50 shadow-[0_8px_30px_rgb(0,0,0,0.12)] ring-1 ring-purple-500/20" : ""
           }`}
         onClick={() => setExpandedPublication(isExpanded ? null : index + (currentSection * 1000))}
       >
-        <div className="flex justify-between items-start gap-4">
-          <div className="flex-1">
-            <p className="font-semibold text-[clamp(1rem,3vw,1.125rem)] text-gray-100">{pub.title}</p>
-            <p className="text-gray-300 text-[clamp(0.875rem,2.5vw,1rem)] mt-2">{pub.authors}</p>
-            <p className="text-gray-400 text-[clamp(0.875rem,2.5vw,1rem)] mt-1">{pub.journal}, {pub.year}</p>
-            {pub.volume && <p className="text-gray-400 text-[clamp(0.875rem,2.5vw,1rem)]">Volume: {pub.volume}</p>}
-            {pub.pages && <p className="text-gray-400 text-[clamp(0.875rem,2.5vw,1rem)]">Pages: {pub.pages}</p>}
-            {pub.impact && <p className="text-[clamp(0.8rem,2vw,0.875rem)] text-purple-300 mt-2">{pub.impact}</p>}
-            {pub.status && <p className="text-[clamp(0.8rem,2vw,0.875rem)] text-pink-400 mt-1">{pub.status}</p>}
-            {pub.award && (
-              <motion.p
-                className="inline-flex items-center gap-2 text-yellow-400 mt-2 bg-yellow-900 bg-opacity-20 px-3 py-1 rounded-full"
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.3, delay: 0.3 }}
-              >
-                🏆 {pub.award}
-              </motion.p>
-            )}
-          </div>
-          <div className="text-gray-400 hover:text-purple-400 transition-colors duration-200" aria-label={isExpanded ? "Collapse" : "Expand"}>
-            {isExpanded ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
-          </div>
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
-        <AnimatePresence>
+        <motion.div layout="position" className="relative z-10 flex justify-between items-start gap-6">
+          <div className="flex-1 space-y-3">
+            <h4 className="font-bold text-[clamp(1.1rem,2.5vw,1.25rem)] text-gray-100 group-hover:text-purple-300 transition-colors duration-300 leading-snug">
+              {pub.title}
+            </h4>
+            <p className="text-gray-300 text-[clamp(0.9rem,2vw,1rem)] font-medium">{pub.authors}</p>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-gray-400 text-[clamp(0.85rem,2vw,0.95rem)]">
+              <span className="flex items-center gap-1.5"><IconBooks className="w-4 h-4 text-purple-400/70" /> {pub.journal} {pub.year && `(${pub.year})`}</span>
+              {pub.volume && <span className="flex items-center gap-1.5"><IconFileDescription className="w-4 h-4 text-purple-400/70" /> Vol. {pub.volume}</span>}
+              {pub.pages && <span className="flex items-center gap-1.5"><IconFileDescription className="w-4 h-4 text-purple-400/70" /> pp. {pub.pages}</span>}
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3 pt-1">
+              {pub.impact && (
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm font-medium backdrop-blur-sm">
+                  <IconAward className="w-4 h-4" />
+                  {pub.impact}
+                </span>
+              )}
+              {pub.status && (
+                <span className="inline-flex items-center px-3 py-1 rounded-md bg-pink-500/10 border border-pink-500/20 text-pink-400 text-sm font-medium backdrop-blur-sm">
+                  {pub.status}
+                </span>
+              )}
+              {pub.award && (
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-sm font-medium backdrop-blur-sm">
+                  🏆 {pub.award}
+                </span>
+              )}
+            </div>
+          </div>
+
+          <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center bg-gray-800/80 border border-gray-700/80 text-gray-400 transition-all duration-500 group-hover:border-purple-500/50 group-hover:text-purple-400 group-hover:bg-purple-500/10 ${isExpanded ? "rotate-180 border-purple-500/50 text-purple-400 bg-purple-500/10" : ""}`}>
+            <IconChevronDown className="w-5 h-5 transition-transform duration-500" />
+          </div>
+        </motion.div>
+
+        <AnimatePresence initial={false}>
           {isExpanded && pub.abstract && (
             <motion.div
+              layout="position"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="mt-4 pl-4 border-l-2 border-gray-700"
+              transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
+              className="relative z-10 overflow-hidden"
             >
-              <h4 className="text-[clamp(0.8rem,2vw,0.875rem)] font-semibold text-gray-300 mb-2">Abstract</h4>
-              <p className="text-gray-400 text-[clamp(0.8rem,2.5vw,0.875rem)]">{pub.abstract}</p>
-              {pub.doi && (
-                <a
-                  href={pub.doi.startsWith("http") ? pub.doi : `https://doi.org/${pub.doi}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-4 text-purple-400 hover:text-purple-300 transition-colors duration-200"
-                >
-                  <IconMicroscope className="w-6 h-6" />
-                  View Paper
-                </a>
-              )}
+              <div className="pt-6 mt-4 border-t border-gray-700/50">
+                <h5 className="flex items-center gap-2 text-[clamp(0.8rem,2vw,0.875rem)] font-semibold text-purple-300 uppercase tracking-wider mb-3">
+                  <IconFileDescription className="w-4 h-4" /> Abstract
+                </h5>
+                <p className="text-gray-300 text-[clamp(0.875rem,2.5vw,1rem)] leading-relaxed text-justify opacity-90">
+                  {pub.abstract}
+                </p>
+                {pub.doi && (
+                  <motion.div layout className="mt-6">
+                    <a
+                      href={pub.doi.startsWith("http") ? pub.doi : `https://doi.org/${pub.doi}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-purple-600/90 hover:bg-purple-500 text-white font-medium transition-all duration-300 shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 hover:-translate-y-0.5"
+                    >
+                      <IconMicroscope className="w-5 h-5" />
+                      Read Full Paper
+                    </a>
+                  </motion.div>
+                )}
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
@@ -266,7 +290,7 @@ export default function Publications() {
 
         <div>
           <h3 className="flex items-center gap-2 text-[clamp(1.1rem,3vw,1.25rem)] font-semibold mb-4 text-purple-300">
-            <IconAward className="w-7 h-7" />
+            <IconSchool className="w-7 h-7" />
             International Conference Full Papers
           </h3>
           <div className="space-y-4">
@@ -306,4 +330,5 @@ export default function Publications() {
     </section>
   )
 }
+
 

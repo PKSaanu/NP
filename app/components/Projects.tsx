@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Code, ExternalLink } from 'lucide-react'
+import { IconCode, IconExternalLink } from '@tabler/icons-react'
 
 interface Project {
   title: string
@@ -74,7 +74,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-purple-300 hover:text-purple-200 transition-colors duration-200"
                 >
-                  View Project <ExternalLink className="w-4 h-4 ml-1" />
+                  View Project <IconExternalLink className="w-4 h-4 ml-1" />
                 </a>
               )}
             </motion.div>

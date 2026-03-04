@@ -1,12 +1,12 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { GraduationCap, Brain, Code, Database } from 'lucide-react'
+import { IconSchool, IconBrain, IconCode, IconDatabase } from '@tabler/icons-react'
 
 export default function Profile() {
   return (
     <section className="mb-8 bg-gray-800 bg-opacity-50 p-6 rounded-lg backdrop-blur-sm shadow-lg">
-      <motion.h1 
+      <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -35,19 +35,19 @@ export default function Profile() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
           <div className="flex items-center gap-3 text-purple-300">
-            <GraduationCap className="w-6 h-6" />
+            <IconSchool className="w-6 h-6" />
             <span>Academic Excellence</span>
           </div>
           <div className="flex items-center gap-3 text-purple-300">
-            <Brain className="w-6 h-6" />
+            <IconBrain className="w-6 h-6" />
             <span>AI Research</span>
           </div>
           <div className="flex items-center gap-3 text-purple-300">
-            <Code className="w-6 h-6" />
+            <IconCode className="w-6 h-6" />
             <span>Software Development</span>
           </div>
           <div className="flex items-center gap-3 text-purple-300">
-            <Database className="w-6 h-6" />
+            <IconDatabase className="w-6 h-6" />
             <span>Data Analysis</span>
           </div>
         </div>

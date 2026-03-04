@@ -61,7 +61,7 @@ export default function Navbar({ navItems }: { navItems: NavItem[] }) {
                 <div className="max-w-[1800px] mx-auto px-4 md:px-8 lg:px-12 flex items-center justify-between h-16 lg:h-14">
                     {/* Logo */}
                     <Link href="#intro" className="relative h-12 w-32 shrink-0">
-                        <Image src="/logo.png" alt="Logo" fill className="object-contain object-left" priority />
+                        <Image src="/logo2.png" alt="Logo" fill className="object-contain object-left" priority />
                     </Link>
 
                     {/* DESKTOP NAV - Right Aligned */}

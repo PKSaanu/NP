@@ -209,7 +209,7 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex min-w-full shrink-0 gap-5 py-4 w-max flex-nowrap",
+          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
@@ -217,20 +217,22 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             key={idx}
-            className="w-[350px] max-w-full relative flex rounded-xl flex-shrink-0 bg-gradient-to-b from-purple-600 to-indigo-700 px-6 py-4 md:w-[400px]"
+            className="w-[260px] md:w-[300px] h-[80px] max-w-full relative flex items-center rounded-2xl flex-shrink-0 bg-gray-900/60 backdrop-blur-md border border-gray-800 hover:border-purple-500/60 transition-all duration-300 px-4 py-3 shadow-sm group"
           >
-            {/* Image on the left */}
-            <img
-              src={item.image}
-              alt={`${item.name}'s image`}
-              className="w-20 h-20 flex-shrink-0 object-cover rounded-lg" // Square shape with rounded corners
-            />
-            {/* Quote and name on the right */}
-            <div className="ml-4 flex flex-col justify-center">
-              <blockquote className="text-lg leading-[1.6] text-gray-100 font-normal">
+            {/* Image container */}
+            <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-xl bg-gradient-to-br from-gray-800/80 to-gray-900/80 border border-gray-700/50 mr-4 shadow-inner overflow-hidden transition-colors duration-300">
+              <img
+                src={item.image}
+                alt={`${item.name} icon`}
+                className="w-8 h-8 object-contain"
+              />
+            </div>
+            {/* Quote and name */}
+            <div className="flex flex-col justify-center min-w-0 flex-1">
+              <span className="text-[0.95rem] leading-tight text-gray-100 font-medium truncate w-full block">
                 {item.quote}
-              </blockquote>
-              <span className="mt-2 text-sm text-gray-400 font-normal">
+              </span>
+              <span className="mt-1 text-[0.7rem] uppercase tracking-wider text-purple-400/80 font-semibold truncate w-full block">
                 {item.name}
               </span>
             </div>

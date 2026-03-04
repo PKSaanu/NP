@@ -1,0 +1,632 @@
+Nirthika Rajendran
+H (+94)77 719 8368
+B nirthika@univ.jfn.ac.lk
+Í https://lk.linkedin.com/in/nirthika
+B Department of Computer Science,
+University of Jaffna, Jaffna, Sri Lanka. 40000
+Profile
+Enthusiastic academic with over seven years of experience in teaching, research, and industry, specializing in deep
+learning, medical image analysis, and computer vision. Committed to advancing AI research, mentoring, and
+contributing to academia and society.
+Career Profile
+Dec-2024 -
+Date
+Lecturer, Department of Computer Science, University of Jaffna, Sri Lanka.
+Dec-2021 -
+Dec-2024
+Lecturer (Probationary), Department of Computer Science, University of Jaffna, Sri Lanka.
+Apr-2018 -
+Apr-2020
+Research Assistant, Department of Computer Science, University of Jaffna,
+Sri Lanka.
+Developed a web-based dengue monitoring and warning system and modelling with dengue risk factors.
+Key skills: Laravel Framework, PHP and MySQL
+May-2017 -
+Apr-2018
+Associate Software Engineer, WSO2, Lanka (Pvt) Ltd.
+Worked on enterprise platform for integrating application programming interfaces, applications, and web
+services locally and across the Internet. Key skills: XML, JAVA and IntelliJ
+Education
+2018-2022
+PhD in Computer Science, University of Jaffna, Sri Lanka.
+Title of thesis: Deep Learning Based Fine-Grained Diabetic Retinopathy Image Grading.
+2013–2017
+Bachelor of Science (Specialisation in Computer Science), University of Jaffna, Sri Lanka,
+OGPA – 3.82 out of 4.00, First Class, Medium - English.
+Publications
+Indexed International Journals
+2026 Thanushika, T., Manivannan, S. and Nirthika, R.: “A lightweight semi-supervised active learning
+framework for blood cell image classification”, In The Visual Computer, Springer, vol.42, no.3,
+p.166. (Q2, Journal Impact Factor (JIF): 2.9) https://doi.org/10.1007/s00371-025-04346-1
+2022
+Nirthika,
+R.,
+Manivannan,
+S.
+and
+Ramanan,
+A.:
+“Siamese
+Network
+based
+Fine
+Grained
+Classification
+for
+Diabetic
+Retinopathy
+Grading”,
+In
+Biomedical
+Signal
+Processing
+and
+Control,
+Elsevier,
+vol.78,
+pp.103874.
+(Q1,
+JIF:
+5.1)
+https://doi.org/10.1016/j.bspc.2022.103874
+2022
+Nirthika,
+R.,
+Manivannan,
+S.,
+Ramanan,
+A. and Wang,
+R.:
+“Pooling in Convo-
+lutional Neural Networks for Medical Image Analysis:
+A Survey and an Empirical
+Study”,
+In Neural Computing and Applications,
+Springer,
+pp.1-27.
+(Q1,
+JIF: 5.1)
+https://doi.org/10.1007/s00521-022-06953-8
+International Conference Full Papers
+2021
+Nirthika,
+R., Manivannan, S. and Ramanan, A.:
+“An Experimental Study on Con-
+volutional Neural Network-Based Pooling Techniques for the Classification of HEp-2
+Cell Images”,
+In proceedings of the 10th IEEE International Conference on Informa-
+tion and Automation for Sustainability (ICIAfS), Negombo, Sri Lanka, pp.
+281-286.
+https://doi.org/10.1109/ICIAfS52090.2021.9606157
+2021
+Nirthika, R., Manivannan, S. and Ramanan, A.:
+“Look at Both Eyes:
+Deep Learn-
+ing Based Feature Fusion Strategies for the Classification of Diabetic Retinopathy Le-
+sions”, In proceedings of the 10th IEEE ICIAfS, Negombo, Sri Lanka, pp.
+263-268.
+https://doi.org/10.1109/ICIAfS52090.2021.9605991
+2020
+Nirthika,
+R.,
+Manivannan,
+S.,
+and
+Ramanan,
+A.:
+“Loss
+functions
+for
+opti-
+mizing
+Kappa
+as
+the
+evaluation
+measure
+for
+classifying
+diabetic
+retinopathy
+and
+prostate
+cancer
+images”,
+In
+IEEE
+International
+Conference
+on
+Industrial
+and
+Infor-
+mation Systems (ICIIS), IIT Ropar,
+India,
+pp.
+144-149.
+(Best
+Paper
+Award)
+https://doi.org/10.1109/ICIIS51140.2020.9342711
+National Workshop Posters
+2021
+Nirthika, R., Manivannan, S. and Ramanan, A.: “Deep Learning for Diabetic Retinopathy
+Grading”, In The Sri Lanka Student Workshop on Computer Science-2021 (SL-SWCS’21),
+University of Jaffna (Best Presentation Award).
+2019
+Nirthika, R., Manivannan, S. and Ramanan, A.: “Is Soft Pooling better than Max and Average
+Pooling?
+A comparative study on HEp-2 Cells and Retinal image classification tasks”, In
+SL-SWCS’19, University of Jaffna (Best Presentation Award).
+2019
+Nirthika, R., Ramanan A., and Surendran S.N.: “A Web-Based Dengue Monitoring and Warning
+System”, In SL-SWCS’19, University of Jaffna.
+2017
+Nirthika, R., Ramanan A., and Gajapathy K.: “A Web-Based Dengue Monitoring and Control
+System”, In SL-SWCS’17, University of Jaffna.
+Articles in Newsletters
+2025
+Nirthika,
+R.:
+“GenAI
+for
+Researchers
+in
+Computing”,
+In
+Kananiyam
+Newsletter,
+volume
+6,
+by
+CompSoc,
+Department
+of
+Computer
+Science,
+University
+of
+Jaffna.
+https://tinyurl.com/Kananiyam-Vol-6-2025
+2024 Thanushika, T. and Nirthika, R.: “Combined Semi-Supervised Learning and Active Learning
+(SSL&AL) Framework for the Limited Labeled Data”, In the ComSpective the ICT Technical
+Magazine, volume 4, issue 2, by the Faculty of Computing, Sabaragamuwa University of Sri Lanka.
+https://tinyurl.com/ComSpective-Vol-4-Issue-2-2024
+2023
+Nirthika, R.: “Best Practices for Professionals”, In JSA Newsletter - Pirayooka Vingnana Sudar,
+volume 13, issue 1.
+2022
+Nirthika, R.: “An Introduction to the Role of Loss Functions in Deep Learning”, In IEEE Sri
+Lanka Section Newsletter, Second Edition.
+2022
+Nirthika,
+R.:
+“Diabetic
+Retinopathy
+Fundus
+Image
+Grading
+Using
+Deep
+Learn-
+ing:
+Research
+Directions”,
+In
+CIS
+ComSpective
+-
+the
+ICT
+Technical
+Mag-
+azine,
+volume
+2,
+issue
+1,
+Department
+of
+Computing
+and
+Information
+Sys-
+tems,
+Faculty
+of
+Applied
+Sciences,
+Sabaragamuwa
+University
+of
+Sri
+Lanka.
+https://tinyurl.com/ComSpective-Vol-2-Issue-I-2022
+Projects
+Apr-2018 -
+Apr-2020
+A Web-based Dengue Monitoring and Warning System.
+This is fully automate the monitoring, reporting and detection process of dengue disease in the
+Northern regional health services division through an elegant and user friendly web-based and mobile-
+based system that can also efficiently assist in controlling the disease, and modelling with dengue risk factors.
+2016 WSO2-ESB Connector for Asana.
+This group project performed in a rapid development process during our third year of the study programme.
+We contributed in writing a connector to REST API for Asana. (XML, JAVA).
+https://github.com/wso2-extensions/esb-connector-asana
+https://docs.wso2.com/display/ESBCONNECTORS/Asana+Connector
+2015
+University Student Management System.
+This group project was carried out during the second year of the study. It was web-based application that
+helps university students, heads of departments and administrative staff. This was done using HTML,
+CSS, PHP, and MYSQL.
+Awards
+2025
+Platinum 2025 Darrel Chong Student Activity Award was presented to the IEEE Women in
+Engineering Student Branch Affinity Group of the University of Jaffna for the event “WIsdom
+Exchange: W(i)E Grow Together” by IEEE MGA SAC. This means the event is ranked first in
+the world among all 2024 IEEE Student Branch events (Team Advisor).
+2025
+R10 WIE Outstanding Student Branch Affinity Group Award 2025 was presented to the
+IEEE Women in Engineering Student Branch Affinity Group of the University of Jaffna by IEEE
+Region 10 (Asia–Pacific), along with an award plaque and a cash prize of US $500 (Team
+Advisor).
+2025
+Felicitation Award in the category ‘Breaking Boundaries: Women Who Excel Beyond Their
+Core Discipline’ in recognition of outstanding contributions beyond my primary academic field, at
+the International Women’s Day Celebration 2025 by the Centre for Gender Equity and Equality
+(CGEE), University of Jaffna.
+2025
+IEEE Sri Lanka Section Outstanding Branch Counselor or Advisor Award for 2024 for
+being the “Advisor of the IEEE Women in Engineering Student Branch Affinity Group of the
+University of Jaffna”, to acknowledges the exemplary volunteer service and unwavering dedication
+to advancing the objectives of the IEEE Sri Lanka Section, was presented at the IEEE Sri Lanka
+Section Annual General Meeting and Member Night, held on January 9, 2025, at the Samudra
+Ballroom, Taj Samudra Colombo, Sri Lanka.
+2024
+Emerging Affinity Group Award at IEEE Sri Lanka Section Awards 2024 for IEEE Women in
+Engineering Student Branch Affinity Group of the University of Jaffna (Team Advisor).
+2021
+Best Presentation Award for the poster “Deep Learning for Diabetic Retinopathy Grading”
+presented in the 6th National Sri Lanka Student Workshop on Computer Science (SL-SWCS’21),
+University of Jaffna, Sri Lanka.
+2020
+Best Paper Award for “Loss functions for optimizing Kappa as the evaluation measure for
+classifying diabetic retinopathy and prostate cancer images”, in IEEE International Conference on
+Industrial and Information Systems (ICIIS), IIT Ropar, India.
+2019
+Best Presentation Award for the poster “Is Soft Pooling better than Max and Average Pooling?
+A comparative study on HEp-2 Cells and Retinal image classification tasks” presented in the 5th
+SL-SWCS’19, University of Jaffna, Sri Lanka.
+2017
+Sabalingam Memorial Prize for the Best Performance in the Special Degree examination in
+Science, University of Jaffna, Sri Lanka.
+Grants
+29-Apr-2024
+Received "R10 WIE IEEE DEI Grant 2024" through the IEEE Women in Engineering Student
+Branch Affinity Group of the University of Jaffna. This grant is a testament to the commitment
+to fostering Diversity, Equity, and Inclusion within the community. The grant amount of USD
+400 will be instrumental in supporting the initiatives aimed at advancing diversity and inclusion
+in STEM fields.
+Admin Roles
+Chair, Vice Chair, Co-Chair
+Feb-2026 –
+Date
+Vice chair of the IEEE Women in Engineering Affinity Group, Sri Lanka.
+2026 Track co-chair of the track titled "Generative AI in Education: Emerging Paradigms, Practices,
+and Possibilities" for the 6th International Conference on Advanced Research in Computing
+(ICARC) 2026, organized by the Faculty of Computing, Sabaragamuwa University of Sri Lanka.
+Feb-2022 –
+Mar-2022
+Interim chair, IEEE Computational Intelligence Society of Student Branch, University of Jaffna.
+22-Jan-2025 –
+9-Feb-2026
+Chair - membership development and Committee Member of the IEEE Women in Engineering
+Affinity Group, Sri Lanka.
+13-Dec-2025
+Programme chair in SL-SWCS’25, Department of Computer Science, University of Jaffna.
+14-16-Jun-2024
+Logistics chair in Google exploreCSR Summer School on Machine Intelligence at Department of
+Computer Science, University of Jaffna.
+9-Dec-2023
+Publicity chair in SL-SWCS’23, Department of Computer Science, University of Jaffna.
+12-14-Jul-2023 Training sessions chair in IEEE Summer School on Computational Intelligence: Theory and
+Application, Department of Computer Science, University of Jaffna.
+Advisor
+Jul-2023 –
+Date
+Academic career guidance advisor for the Faculty of Science, University of Jaffna.
+Jan-2024 –
+Feb-2025
+Advisor for the IEEE Women in Engineering of Student Branch Affinity Group, University of
+Jaffna (IEEE-WIE-SBAG-UoJ).
+Coordinator
+7-Feb-2026 -
+Date
+Coordinator of Certificate Courses in Computing: "Python Essentials for Problem Solvers"
+(Tamil medium) - External programme by Department of Computer Science, University of Jaffna.
+2025
+Coordinator of designing team and welcome dance team in the Golden Jubilee committee,
+Faculty of Science, University of Jaffna.
+1-Feb-2025 -
+19-Apr-2025
+Coordinator of Certificate Courses in Computing: "Python for Problem Solving" - External
+programme by Department of Computer Science, University of Jaffna.
+Other
+19-Feb-2026
+Panellist in the track titled "Generative AI in Education: Emerging Paradigms, Practices, and
+Possibilities" for the 6th International Conference on Advanced Research in Computing (ICARC)
+2026, organized by the Faculty of Computing, Sabaragamuwa University of Sri Lanka.
+Feb-2023 –
+Dec-2024
+Representative of the Lecturers (Probationary), Faculty Board of Science, University of Jaffna.
+Feb-2022 –
+Mar-2023
+Secretary, Section-B(Applied Science), Jaffna Science Association (JSA).
+Teaching
+2023–2024
+Software Engineering [CSC205S2, CSC205G2]
+2022–Date
+Data Structure and Algorithm (Practical) [CSC202S2, CSC202G2]
+2022–2023
+Operating Systems [CSC203S2, CSC203G2]
+2022–Date
+Professional Practice [CSC212S2]
+2022–Date
+Multimedia Technologies [CSC107S2, CSC103G2]
+2022–Date
+Rapid Application Development [CSC301S3, CSC301G3]
+2022–2023
+Coordinator for Team Software Project [CSC304S3, CSC304G3]
+Supervision
+2022–Date Team Software Project – 15 Teams
+2022–Date
+Undergraduate Research Project
+{ Co-Supervision – 5 Individuals
+{ Main Supervision – 9 Individuals
+2025–2026
+External Degree Software Project
+{ Bachelor of Information Technology (BIT) from University of Colombo School of Computing
+(UCSC) – 1 Individual
+Resource Person
+17-Dec-2025
+Resource Person for "Enhancing Office Work with Digital and AI Tools" workshop for the staff
+of Mannar Divisional Secretariat, organized by the Career Guidance Unit (CGU), University of
+Jaffna (UoJ).
+16-Dec-2025
+Resource Person for "Digital Literacy for Executive Excellence" workshop for the staff of Mannar
+Divisional Secretariat, organized by the CGU, UoJ.
+5-Dec-2025
+Resource Person for "Simplifying Office Tasks through Modern IT Practices" workshop for
+the staff of the Ministry of Health, Indigenous Medicine, and Probation & Child Care Services,
+organized by the CGU, UoJ.
+2-Dec-2025
+Resource Person for "Empowering Staff with NextGen IT Tools" workshop for the staff of Nallur
+Divisional Secretariat, Jaffna, organized by the CGU, UoJ.
+12-Nov-2025
+Resource Person for "AI Essentials for Smart Administrators" workshop for the staff of Jaffna
+District Secretariat, organized by the CGU, UoJ.
+7-Nov-2025
+Resource Person for "Practical Generative AI for Office Staff" workshop for the staff of Nallur
+Divisional Secretariat, Jaffna, organized by the CGU, UoJ.
+16-Oct-2025
+Resource Person for "Boosting Productivity with Generative AI" workshop for the staff of Jaffna
+Divisional Secretariat, Jaffna, organized by the CGU, UoJ.
+19-Jul-2025
+Guest Speaker for "Artificial Intelligence and Its Applications in Scientific Research" workshop for
+Special Degree students of the Faculty of Science, organized by the Chemical Society (ChemSoc),
+Department of Chemistry, UoJ.
+12-Jun-2025
+Resource Person for the session on "Multimedia Technologies" of the Professional Development
+Workshop, for GIT Teachers organized by the Provincial Department of Education, Northern
+Province in collaboration with Department of Computer Science, UoJ
+17-Aug-2024
+Guest Speaker for "Mastering Deep Learning with Hands-On" workshop organized by IEEE
+Computer Society Student Branch Chapter, UoJ. Delivered a Keynote session on "Deep Learning
+with Convolutional Neural Networks".
+Academic and Other Activities
+Member
+2026
+Member of the Scientific Committee of 1st International Conference on Artificial Intelligence &
+Society (AiCon) 2026.
+2026
+Member of the Technical Program Committee for International Conference on Intelligent
+Information, Systems Science and Engineering (ISSE) 2026.
+2026
+Member of the Technical Program Committee for International Conference on Data, Information
+and Computing Science (CDICS) 2026.
+2-Nov-2025 -
+22-Jan-2026
+Member of the Election Committee of the IEEE Sri Lanka Section Chapter, Computational
+Intelligence Society (CIS11), appointed by the IEEE Sri Lanka Section.
+2025
+Member of the Technical Program Committee for International Conference on Data, Information
+and Computing Science (CDICS) 2025.
+30-Jul-2024 -
+Date
+Member of the Curriculum development committee for Master of Computer Science [MCS] and
+Master of Science in Computer Science [MSc (CS)], Faculty of Graduate Studies.
+3-Nov-2023 -
+Date
+Member of the Career Guidance Cell Faculty of Science.
+10-Feb-2023 -
+Date
+Member of the Science Faculty Board, University of Jaffna.
+Instructor
+7-Feb-2026 -
+Date
+Instructor of Certificate Courses in Computing: "Python Essentials for Problem Solvers" (English
+medium) - External programme by Department of Computer Science (DCS), University of Jaffna
+(UoJ).
+11-Dec-2025
+Instructor for “AI Tools for NPC Staff” workshop for the Staff of the Northern Provincial Council,
+Sri Lanka, at the DCS, UoJ.
+24-Nov-2025
+Instructor for “Intelligent Tools for Everyday Office Work” workshop for the Staff of the
+Department of Local Government, Northern Province, at the Computer Unit, UoJ.
+18-Nov-2025
+Instructor for “Smart Tools for Administrative Efficiency” workshop for the Staff of Poonakary
+Divisional Secretariat, Jaffna, at the DCS, UoJ.
+4-Nov-2025
+Instructor for “AI Tools for Executive Officers” workshop for the Staff of the Management
+Development Training Unit, Northern Province, at the DCS, UoJ.
+29–30-Oct-2025
+Instructor for “GenAI Tools” workshop for the Staff of the Department of Industries, Northern
+Province, at the DCS, UoJ.
+24-Mar-2024 -
+23-Jun-2024
+Instructor of Certificate Courses in Computing: "Advance Web Development" (Tamil medium) -
+External programme by DCS, UoJ.
+16-Mar-2024 -
+22-Jun-2024
+Instructor of Certificate Courses in Computing: "Python for Problem Solving" (Tamil medium) -
+External programme by DCS, UoJ.
+Other
+6-Jul-2025
+Organiser of the GeSSoMI-2024: Cybersecurity Bootcamp through the IEEE-WIE-SBAG-UoJ at
+Department of Computer Science, University of Jaffna.
+17-Jun-2024
+Co-organiser of the event "Global Glow" through the IEEE WIE Affinity Group of Sri Lanka
+Section.
+2025
+Contributed in revise curriculum and and update new course syllabi for the Certficate Course
+(external programme) at Department of Computer Science, University of Jaffna.
+28-Oct-2023,
+25-Oct-2025
+Proctor for four teams each year in IEEEXtreme 24 hours coding competition through IEEE
+Student Branch, University of Jaffna.
+17-Jun-2023,
+2-Jul-2023
+Evaluator in Yarl Geek Challenge (YGC) Jouniors at Yarl IT Hub (YITHub).
+Reviewed Publications
+Journals
+2026
+Elsevier - Computers and Electrical Engineering - 1 Paper
+2024 Wiley - The Scientific World Journal - 3 Papers
+2024
+Elsevier - Computer Methods and Programs in Biomedicine - 1 Paper
+2023
+Elsevier - Biomedical Signal Processing and Control - 1 Paper
+Conference & Workshop
+2026
+9th IEEE International Research Conference on Smart Computing and Systems Engineering
+(SCSE) - 2 Papers
+2025
+Sri Lanka Student Workshop on Computer Science (SLSWCS) - 4 Extended Abstracts
+2025 1st International Conference on Applied Sciences (ICAS) - 2 Papers
+2025 Asia Pacific Advanced Network Conference (APANConf) - 1 Paper
+2024 2nd International Conference on Data, Information and Computing Science (CDICS) - 1 Paper
+2023
+Sri Lanka Student Workshop on Computer Science (SLSWCS) - 3 Extended Abstracts
+2022 Vingnanam Research Conference (VRC) - 2 Papers
+Professional Memberships
+{ Senior Member, IEEE (since January 2025).
+{ Member, IEEE Computer Society Technical Committee on Intelligent Informatics (since January
+2025).
+{ Member, IEEE Computer Society Technical Committee on Pattern Analysis and Machine
+Intelligence (since January 2025).
+{ Member, IEEE Computer Society (since January 2025).
+{ Professional Member, IEEE (2022-2025).
+{ Member, IEEE Computational Intelligence Society (since January 2022).
+{ Member, IEEE Women in Engineering (since March 2019).
+{ Graduate Member, IEEE (2019-2022).
+{ Member, IEEE Young Professionals (since October 2018).
+{ Student Member, IEEE (2017-2019).
+Professional Qualifications
+Sep-2024
+Successfully completed the IELTS Academic with Overall Band Score: 6.0 (Competent User) at
+British Council Colombo.
+31-Dec-2022
+Successfully completed the Induction Programme for Academic Staff at University of Jaffna.
+2022
+Received pass grade in the G.C.E. Ordinary Level Second Language Sinhala Exam
+Participations & Certifications
+15-Feb-2026
+Participated in the pre-conference workshop of the ICARC 2026 conference titled "Generative AI
+for Technology- Enhanced Learning: Prompt Engineering, Multimedia, and Interactive Content
+Generation".
+15-Feb-2026
+Participated in the pre-conference workshop of the ICARC 2026 conference titled "From Fun-
+damentals to Applications: Machine Learning and Reinforcement Learning in NextG Wireless
+Systems".
+10-Feb-2026
+Participated in the pre-conference workshop of the AICon conference titled "Framing the AI
+Mindset: Looking at AI in the Real World" conducted in collaboration with the International
+Conference on Artificial Intelligence & Society.
+10-Aug-2022
+Successfully completed the Journal Citation Reports (JCR) certification series – 2022 conducted
+by “Clarivate”.
+2022
+Participated English course - Virtual English Language Specialist Programme organized by the
+Department of English Language Teaching (DELT), Faculty of Humanities and Social Sciences,
+University of Ruhuna, in collaboration with the United States Embassy in Sri Lanka.
+7-15-Jul-2021 The 11th Lisbon Machine Learning School – LxMLS 2021, jointly organized by Instituto Superior
+Técnico, Instituto de Telecomunicações, INESC-ID and Unbabel, in Lisbon, Portugal.
+14-Jun-2021
+Successfully completed and received passing grades in “AI0101EN: AI for Everyone: Master the
+Basics” and “DS0101EN: Introduction to Data Science”, courses of study offered by IBM, an
+online learning initiative of IBM, edX.
+13-Jun-2021
+Successfully completed and received a passing grade in “DS0101EN: Introduction to Data Science”,
+a course of study offered by IBM, an online learning initiative of IBM, edX.
+7-Jun-2021 Attended Month of CodeGeniX - AdaGrad’21 Workshop on “Introduction to Machine Learning”
+and Online Skill Test organised by the IEEE Computer Society Student Branch Chapter of Sri
+Lanka Technological Campus.
+Attended Conferences & Workshops
+18-19-Feb-2026 Attended International Conference on Advanced Research in Computing (ICARC) 2026 [Virtual]
+21-Jul-2022 Attended VINGNANAM Research Conference (VRC) conference, Faculty of Science, University
+of Jaffna.
+Before 2021
+{ Sri Lanka Student Workshop on Computer Science (SL-SWCS’21), University of Jaffna, December
+2021.
+{ Attended the special sessions, workshops and tutorials at 16th IEEE International Conference on
+Industrial and Information Systems (ICIIS), held in Faculty of Engineering, University of Peradeniya, 9
+& 11 December 2021.
+{ Tenth IEEE International Conference on Information and Automation for Sustainability (ICIAfS),
+Negombo, Sri Lanka, 11-13 August 2021.
+{ Month of CodeGeniX - AdaGrad’21 Workshop on “Introduction to Machine Learning”, by the IEEE
+Computer Society Student Branch Chapter of Sri Lanka Technological Campus, 7 June 2021.
+{ Fifteenth IEEE International Conference on Industrial and Information Systems (ICIIS), IIT Ropar, India,
+26-28 November 2020.
+{ International Conference on Digital Image Computing: Techniques and Applications (DICTA) - Post
+Conference Workshop, Australia, 3rd December 2020.
+{ Participated in the tutorial session on "Recent Developments in Machine Learning" at 14th IEEE
+International Conference on Industrial and Information Systems (ICIIS), held in Faculty of Engineering,
+University of Peradeniya, 19th December 2019.
+{ Sri Lanka Student Workshop on Computer Science (SL-SWCS’19), University of Jaffna, December
+2019.
+{ Ninth IEEE International Conference on Information and Automation for Sustainability (ICIAfS’18),
+Colombo, Sri Lanka, December 2018.
+{ Workshop on Statistics for Research, organised by Young Science Forum, National Science and Technology
+Commission and University of Jaffna, November 2018.
+{ Vingnanam International Research Conference (VIRC) organised by the Faculty of Science, University of
+Jaffna, July 2018.
+{ Sri Lanka Student Workshop on Computer Science (SL-SWCS’17), University of Jaffna, 2017.
+{ Sri Lanka Student Workshop on Computer Science (SL-SWCS’15), University of Jaffna, 2015.
+{ Workshop on "Guidance to Prepare Effective Resumes and Filling out Application Forms for Jobs" held
+at the University of Jaffna under the HETC project, November 2014.
+{ Workshop on "Setting up Career Goal" held at the University of Jaffna under the HETC project,
+November 2014.
+{ Jaffna IT Conference, organised by the Department of Computer Science, University of Jaffna and
+supported by SLASSCOM, December 2014.
+{ Workshops conducted by WSO2 for WSO2-ESB, WSO2-IS, Security & Java 8, 2016.
+{ Workshop conducted by hSenid Mobile, organised by the Department of Computer Science, University
+of Jaffna, 2014.
+{ Workshop conducted by Zone24/7, organised by University of Jaffna, 2014.
+Referees
+Prof. A. Ramanan
+Professor in Computer Science,
+Dept. of Computer Science,
+Faculty of Science,
+University of Jaffna.
+T 021 221 8194
+H 077 670 1155
+B a.ramanan@univ.jfn.ac.lk
+Prof. M. Siyamalan
+Professor in Computer Science,
+Dept. of Computer Science,
+Faculty of Science,
+University of Jaffna.
+T 021 221 8194
+H 076 706 4194
+B siyam@univ.jfn.ac.lk
+

@@ -9,6 +9,34 @@ import { Trophy, Star, AwardIcon, Medal, GraduationCap } from 'lucide-react';
 export default function Awards() {
   const awards = [
     {
+      year: 2025,
+      title: "Platinum 2025 Darrel Chong Student Activity Award",
+      description: "Presented to the IEEE Women in Engineering Student Branch Affinity Group of the University of Jaffna (Team Advisor)",
+      icon: <Trophy className="w-8 h-8" />,
+      color: "from-blue-600 to-indigo-600",
+    },
+    {
+      year: 2025,
+      title: "R10 WIE Outstanding Student Branch Affinity Group Award",
+      description: "Presented to the IEEE WIE Student Branch Affinity Group of the University of Jaffna by IEEE Region 10 (Asia–Pacific) (Team Advisor)",
+      icon: <AwardIcon className="w-8 h-8" />,
+      color: "from-purple-600 to-pink-600",
+    },
+    {
+      year: 2025,
+      title: "Felicitation Award",
+      description: "In the category 'Breaking Boundaries: Women Who Excel Beyond Their Core Discipline' at International Women's Day Celebration 2025",
+      icon: <Star className="w-8 h-8" />,
+      color: "from-pink-500 to-orange-500",
+    },
+    {
+      year: 2025,
+      title: "Outstanding Branch Counselor or Advisor Award",
+      description: "IEEE Sri Lanka Section Outstanding Branch Counselor or Advisor Award for 2024",
+      icon: <Medal className="w-8 h-8" />,
+      color: "from-indigo-500 to-purple-500",
+    },
+    {
       year: 2024,
       title: "Emerging Affinity Group Award",
       description: (

@@ -1,202 +1,74 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
-import { Users, UserCheck, ChevronLeft, ChevronRight } from 'lucide-react';
-import { PinContainer } from "@/components/ui/3d-pin";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { Users, UserCheck, GraduationCap } from 'lucide-react';
+import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 interface SupervisionCategory {
   title: string;
   count: number;
   icon: React.ReactNode;
+  color: string;
 }
 
 export default function Supervision() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
-
   const categories: SupervisionCategory[] = [
     {
       title: "Undergraduate Team Software Project",
-      count: 9,
-      icon: <Users className="w-6 h-6" />
+      count: 15,
+      icon: <Users className="w-10 h-10" />,
+      color: "from-blue-400 to-indigo-500"
     },
     {
       title: "Undergraduate Research Project (Co-Supervision)",
       count: 5,
-      icon: <UserCheck className="w-6 h-6" />
+      icon: <UserCheck className="w-10 h-10" />,
+      color: "from-purple-400 to-pink-500"
     },
     {
       title: "Undergraduate Research Project (Main Supervision)",
-      count: 4,
-      icon: <UserCheck className="w-6 h-6" />
+      count: 9,
+      icon: <UserCheck className="w-10 h-10" />,
+      color: "from-amber-400 to-orange-500"
+    },
+    {
+      title: "External Degree Software Project (BIT from UCSC)",
+      count: 1,
+      icon: <GraduationCap className="w-10 h-10" />,
+      color: "from-emerald-400 to-teal-500"
     }
   ];
 
-  const handleTouchStart = (e: React.TouchEvent) => {
-    setTouchStart(e.touches[0].clientX);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.touches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
-    const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > 50;
-    const isRightSwipe = distance < -50;
-
-    if (isLeftSwipe) {
-      nextCard();
-    } else if (isRightSwipe) {
-      prevCard();
-    }
-
-    setTouchStart(0);
-    setTouchEnd(0);
-  };
-
-  const slideVariants = {
-    enter: (direction: number) => ({
-      x: direction > 0 ? 300 : -300,
-      opacity: 0,
-      scale: 0.8,
-      rotateY: direction > 0 ? 45 : -45
-    }),
-    center: {
-      zIndex: 1,
-      x: 0,
-      opacity: 1,
-      scale: 1,
-      rotateY: 0,
-      transition: {
-        duration: 0.5
-      }
-    },
-    exit: (direction: number) => ({
-      zIndex: 0,
-      x: direction < 0 ? 300 : -300,
-      opacity: 0,
-      scale: 0.8,
-      rotateY: direction < 0 ? 45 : -45,
-      transition: {
-        duration: 0.5
-      }
-    })
-  };
-
-  const nextCard = () => {
-    setDirection(1);
-    setCurrentIndex((prev) => (prev + 1) % categories.length);
-  };
-
-  const prevCard = () => {
-    setDirection(-1);
-    setCurrentIndex((prev) => (prev - 1 + categories.length) % categories.length);
-  };
-
   return (
-    <section id="supervision" className="py-20">
-      <div className="container mx-auto">
-        <h2 className="text-[clamp(1.25rem,4vw,1.5rem)] font-bold mb-16 text-purple-400">Supervision</h2>
+    <section id="supervision" className="mb-8 p-6 bg-gray-800 bg-opacity-30 rounded-lg backdrop-blur-sm shadow-lg">
+      <h2 className="text-[clamp(1.15rem,3vw,1.35rem)] font-bold mb-6 text-purple-400 border-b border-purple-500/20 pb-4">Supervision & Mentorship</h2>
 
-        <div className="relative">
-          {/* Mobile View */}
-          <div className="md:hidden min-h-[480px] relative">
-            <div
-              className="absolute inset-0 flex items-center justify-center px-4"
-              onTouchStart={handleTouchStart}
-              onTouchMove={handleTouchMove}
-              onTouchEnd={handleTouchEnd}
-            >
-              <AnimatePresence initial={false} custom={direction} mode="wait">
-                <motion.div
-                  key={currentIndex}
-                  custom={direction}
-                  variants={slideVariants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  className="w-full max-w-[320px]"
-                >
-                  <PinContainer title={`${categories[currentIndex].title}`}>
-                    <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-full h-[360px]">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="bg-purple-500 bg-opacity-20 p-3 rounded-full">
-                          {categories[currentIndex].icon}
-                        </div>
-                        <h3 className="font-bold text-[clamp(0.9rem,3vw,1rem)] text-slate-100">
-                          {categories[currentIndex].title}
-                        </h3>
-                      </div>
-                      <div className="text-[clamp(1.5rem,5vw,1.875rem)] font-bold text-purple-300 mb-2">
-                        {categories[currentIndex].count}
-                      </div>
-                      <div className="text-[clamp(0.8rem,2vw,0.875rem)] text-gray-400">
-                        Projects/Students
-                      </div>
-                      <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
-                    </div>
-                  </PinContainer>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-            {/* Navigation */}
-            <div className="absolute left-0 right-0 -bottom-8 flex justify-between items-center px-4 pb-4">
-              <button
-                onClick={prevCard}
-                className="p-2 rounded-full bg-purple-500 bg-opacity-20 text-white hover:bg-opacity-30 transition-colors"
-                aria-label="Previous card"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              <div className="flex gap-2">
-                {categories.map((_, idx) => (
-                  <div
-                    key={idx}
-                    className={`w-2 h-2 rounded-full transition-colors ${idx === currentIndex ? 'bg-purple-500' : 'bg-purple-500 bg-opacity-20'
-                      }`}
-                  />
-                ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mx-auto">
+        {categories.map((category, index) => (
+          <CardSpotlight
+            key={index}
+            className="h-[180px] p-6 flex flex-col justify-between"
+            radius={200}
+            color="#6b21a8" // Purple spotlight
+          >
+            <div className="relative z-20 flex justify-between items-start w-full">
+              <div className={`p-3 rounded-xl bg-gradient-to-br ${category.color} bg-opacity-20 text-white shadow-lg backdrop-blur-sm border border-white/10`}>
+                {React.cloneElement(category.icon as React.ReactElement, { className: "w-7 h-7" })}
               </div>
-              <button
-                onClick={nextCard}
-                className="p-2 rounded-full bg-purple-500 bg-opacity-20 text-white hover:bg-opacity-30 transition-colors"
-                aria-label="Next card"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
+              <div className="text-right">
+                <span className={`text-[clamp(2.5rem,5vw,3.5rem)] font-bold bg-gradient-to-br ${category.color} text-transparent bg-clip-text leading-none drop-shadow-sm`}>
+                  {category.count}
+                </span>
+                <div className="text-gray-400 text-[0.7rem] mt-1 uppercase tracking-wider font-semibold">Projects</div>
+              </div>
             </div>
-          </div>
 
-          {/* Desktop View */}
-          <div className="hidden md:flex justify-center items-center gap-2">
-            {categories.map((category, index) => (
-              <PinContainer key={index} title={`${category.title}`}>
-                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem]">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-purple-500 bg-opacity-20 p-3 rounded-full">
-                      {category.icon}
-                    </div>
-                    <h3 className="font-bold text-[clamp(0.9rem,3vw,1rem)] text-slate-100">
-                      {category.title}
-                    </h3>
-                  </div>
-                  <div className="text-[clamp(1.5rem,5vw,1.875rem)] font-bold text-purple-300 mb-2">
-                    {category.count}
-                  </div>
-                  <div className="text-[clamp(0.8rem,2vw,0.875rem)] text-gray-400">
-                    Projects/Students
-                  </div>
-                  <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
-                </div>
-              </PinContainer>
-            ))}
-          </div>
-        </div>
+            <div className="relative z-20 mt-auto">
+              <h3 className="text-[clamp(0.95rem,2vw,1.1rem)] font-medium text-white/90 leading-snug">
+                {category.title}
+              </h3>
+            </div>
+          </CardSpotlight>
+        ))}
       </div>
     </section>
   );

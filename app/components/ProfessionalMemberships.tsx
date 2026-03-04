@@ -14,6 +14,12 @@ interface Membership {
 export default function ProfessionalMemberships() {
   const memberships: Membership[] = [
     {
+      organization: "IEEE",
+      role: "Senior Member",
+      period: "Since January 2025",
+      icon: <Users className="w-6 h-6" />
+    },
+    {
       organization: "IEEE Computer Society Technical Committee on Intelligent Informatics",
       role: "Member",
       period: "Since January 2025",
@@ -51,8 +57,20 @@ export default function ProfessionalMemberships() {
     },
     {
       organization: "IEEE",
-      role: "Member",
-      period: "Since January 2016",
+      role: "Professional Member",
+      period: "2022-2025",
+      icon: <Users className="w-6 h-6" />
+    },
+    {
+      organization: "IEEE",
+      role: "Graduate Member",
+      period: "2019-2022",
+      icon: <Users className="w-6 h-6" />
+    },
+    {
+      organization: "IEEE",
+      role: "Student Member",
+      period: "2017-2019",
       icon: <Users className="w-6 h-6" />
     },
     // Adding the new ones

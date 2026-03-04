@@ -18,7 +18,12 @@ export function CareerProfile() {
     {
       title: "Lecturer",
       company: "Department of Computer Science, University of Jaffna, Sri Lanka",
-      period: "Dec 2021 – Present",
+      period: "Dec 2024 – Present",
+    },
+    {
+      title: "Lecturer (Probationary)",
+      company: "Department of Computer Science, University of Jaffna, Sri Lanka",
+      period: "Dec 2021 – Dec 2024",
     },
     {
       title: "Research Assistant",

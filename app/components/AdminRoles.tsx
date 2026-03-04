@@ -13,9 +13,27 @@ interface Role {
 export default function AdminRoles() {
   const roles: Role[] = [
     {
+      title: "Vice Chair",
+      organization: "IEEE Women in Engineering Affinity Group, Sri Lanka",
+      period: "Feb 2026 - Present",
+      icon: <Users className="w-6 h-6" />
+    },
+    {
+      title: "Track Co-Chair",
+      organization: "6th International Conference on Advanced Research in Computing (ICARC) 2026",
+      period: "2026",
+      icon: <BookOpen className="w-6 h-6" />
+    },
+    {
+      title: "Coordinator",
+      organization: "Certificate Courses in Computing, Department of Computer Science, University of Jaffna",
+      period: "Feb 2026 - Present",
+      icon: <GraduationCap className="w-6 h-6" />
+    },
+    {
       title: "Advisor",
       organization: "IEEE Women in Engineering of Student Branch Affinity Group, University of Jaffna",
-      period: "Jan 2024 - Present",
+      period: "Jan 2024 - Feb 2025",
       icon: <Users className="w-6 h-6" />
     },
     {
@@ -27,7 +45,7 @@ export default function AdminRoles() {
     {
       title: "Representative",
       organization: "Lecturers (Probationary), Faculty Board of Science, University of Jaffna",
-      period: "Feb 2023 - Present",
+      period: "Feb 2023 - Dec 2024",
       icon: <Briefcase className="w-6 h-6" />
     },
     {

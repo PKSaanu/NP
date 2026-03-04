@@ -25,13 +25,15 @@ export default function Publications() {
 
   const journals: Publication[] = [
     {
-      title: "A Self-Training based Semi-Supervised Active Learning for the Classification of Blood Cells",
+      title: "A lightweight semi-supervised active learning framework for blood cell image classification",
       authors: "Thanushika, T., Manivannan, S. and Nirthika, R.",
-      journal: "Computers in Biology and Medicine, Elsevier",
-      status: "Under Review",
-      year: 2024,
-      impact: "Q1, Impact Factor: 7.0",
-      abstract: "This paper presents a novel approach to blood cell classification using semi-supervised active learning..."
+      journal: "The Visual Computer, Springer",
+      volume: "42",
+      pages: "166",
+      year: 2026,
+      doi: "10.1007/s00371-025-04346-1",
+      impact: "Q2, Journal Impact Factor (JIF): 2.9",
+      abstract: "This paper presents a novel approach to blood cell classification using a lightweight semi-supervised active learning framework..."
     },
     {
       title: "Siamese Network based Fine Grained Classification for Diabetic Retinopathy Grading",
@@ -123,11 +125,20 @@ export default function Publications() {
 
   const newsletters: Publication[] = [
     {
+      title: "GenAI for Researchers in Computing",
+      authors: "Nirthika, R.",
+      journal: "Kananiyam Newsletter, by CompSoc, Department of Computer Science, University of Jaffna",
+      year: 2025,
+      volume: "6",
+      doi: "https://tinyurl.com/Kananiyam-Vol-6-2025",
+      abstract: "This article discusses the applications and implications of Generative AI for researchers in computing..."
+    },
+    {
       title: "Combined Semi-Supervised Learning and Active Learning (SSL&AL) Framework for the Limited Labeled Data",
       authors: "Thanushika, T. and Nirthika, R.",
       journal: "ComSpective the ICT Technical Magazine",
       year: 2024,
-      status: "Accepted",
+      doi: "https://tinyurl.com/ComSpective-Vol-4-Issue-2-2024",
       volume: "4",
       abstract: "This article discusses the combination of semi-supervised and active learning approaches..."
     },
@@ -139,7 +150,7 @@ export default function Publications() {
       volume: "2",
       pages: "1",
       abstract: "This article explores research directions in deep learning-based grading of diabetic retinopathy fundus images...",
-      doi: "http://repo.lib.jfn.ac.lk/ujrr/bitstream/123456789/9041/1/Diabetic%20Retinopathy%20Fundus%20Image%20Grading%20Using%20Deep%20Learning%20Research%20Directions.pdf"
+      doi: "https://tinyurl.com/ComSpective-Vol-2-Issue-I-2022"
     },
     {
       title: "Best Practices for Professionals",
@@ -147,7 +158,7 @@ export default function Publications() {
       journal: "JSA Newsletter - Pirayooka Vingnana Sudar",
       year: 2023,
       volume: "13",
-      abstract: "This article shares best practices for professionals in the field of computer science and technology..."
+      abstract: "This article shares best Practices for professionals in the field of computer science and technology..."
     },
     {
       title: "An Introduction to the Role of Loss Functions in Deep Learning",
